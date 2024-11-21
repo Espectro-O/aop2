@@ -1,0 +1,388 @@
+/* Estilo Geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #02111B, #5D737E); 
+    color: #000f42;
+    overflow-x: hidden; 
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
+}
+main {
+    flex: 1; 
+}
+/* Menu */
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 25px 20px;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+    max-width: 1200px; 
+    width: 100%; 
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.logo {
+    position: absolute; 
+    left: 20px;
+    top: 50%; 
+    transform: translateY(-50%); 
+    flex-shrink: 0; 
+}
+
+.logo img {
+    width: 150px; 
+    height: auto;
+    object-fit: contain;
+}
+
+.menu-links {
+    list-style: none; 
+    display: flex; 
+    gap: 20px; 
+    padding: 0; 
+    margin: 0; 
+    justify-content: center; 
+}
+
+.menu-links li {
+    margin: 0;
+}
+
+.menu-links a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FCFCFC;
+    transition: color 0.3s ease;
+}
+
+.menu-links a:hover {
+    color: #5D737E;
+}
+.container {
+    background-color: #FCFCFC;
+    max-width: 1200px; 
+    margin: 40px auto; 
+    padding: 30px 30px; 
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+/* Contêiner Principal para Home */
+.home-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 35px 20px 20px 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px 10px 0 0; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    border: none; 
+}
+
+
+
+/* Introdução */
+.intro {
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 32px;
+    color: #02111B;
+}
+
+.intro p {
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+/* Banner */
+.banner-container {
+    flex: 1;
+    max-width: 50%;
+}
+.banner-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Texto de Introdução */
+.text-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.text-container h1 {
+    font-size: 32px;
+    color: #02111B;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.text-container p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+
+}
+
+/* Linha decorativa abaixo do título */
+.destaques-line {
+    width: 80%; 
+    height: 2px; 
+    background: linear-gradient(to right, #5D737E, #02111B); 
+    margin: 0 auto 20px; 
+    border-radius: 5px; 
+}
+/* Destaques Container */
+.destaques-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px 50px 20px;
+    background-color: #FFFFFF;
+    border-radius: 0 0 10px 10px; 
+    border: none;
+}
+/* Destaques Itens */
+.destaques-items {
+    display: flex; 
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+/* Destaques Itens */
+.destaque-item {
+    text-align: center;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: calc(33.33% - 20px); 
+}
+
+.destaque-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.destaque-item p {
+    margin-top: 10px;
+    color: #02111B;
+}
+
+.destaque-item p {
+    margin-top: 10px;
+    color: #02111B;
+}
+
+/* Formulário de Contato */
+.form-container {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-container h1 {
+    font-size: 28px;
+    color: #02111B;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.form-container p {
+    font-size: 16px;
+    color: #5D737E;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+input, textarea {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+input:focus, textarea:focus {
+    border-color: #5D737E;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+button {
+    background-color: #02111B;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #5D737E;
+}
+/* Linha decorativa */
+.footer-line {
+    width: 80%; 
+    height: 2px; 
+    background: linear-gradient(to right, #5D737E, #02111B); 
+    margin: 10px auto; 
+    border-radius: 5px; 
+}
+
+/* Ícones sociais */
+.footer-icons {
+    display: flex;
+    gap: 15px; 
+    margin-top: 10px;
+}
+/* Rodapé */
+footer {
+    background-color: #02111B;
+    color: #FCFCFC;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+/* Texto do rodapé */
+footer p {
+    margin: 5px 0;
+    font-weight: normal;
+    font-family: 'Arial', sans-serif;
+    opacity: 0.9;
+}
+.footer-icons a {
+    color: #FCFCFC;
+    text-decoration: none;
+    font-size: 18px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-icons a:hover {
+    transform: scale(1.1);
+    color: #FFD700;
+}
+
+body {
+    margin-top: 70px;
+}
+
+
+
+/* Contêiner do banner */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+/* Estilo da imagem */
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Faixa para o título Destaques */
+.destaques-title-container {
+    width: calc(100% - 40px);
+    max-width: 1200px;
+    margin: 0 auto 20px;
+    background: linear-gradient(to right, #5D737E, #02111B);
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+.destaques-title {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.destaque-item a {
+    text-decoration: none;
+    color: inherit;
+}
+.destaque-item a:hover {
+    text-decoration: none;
+    color: #ccc907;
+}
